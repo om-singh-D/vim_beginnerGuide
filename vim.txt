@@ -1,0 +1,131 @@
+VIM
+
+first and foremost is to EXIST VIM use 
+:q!
+
+vim works in modes
+so, use ESC to exist mode
+
+Now,once you exist your file all the settings disappear and you don't want that so we configure the settings file
+How?
+->vi ~/.vimrc
+->set the settings 
+->:w or :wq	write the changes
+
+INSERT
+i for before the cursor =4
+a for after the cursor 
+o for next line below
+now these with SHIFT
+i jumps in the beginning of the line
+a jumps in the end of the line
+o opens a line above 
+
+
+:set number  //puts line numbers
+:set relativenumber    //to set relative lines 
+:set mouse=a  //to activate the mouse function
+:set tabstop=4
+:set shiftwidth=4
+:set autoindent
+colourscheme //then select your preferred one
+colourscheme slate
+
+
+u in normalMode will do the UNDO function and
+CTRL+R is for the REDO
+
+VISUAL MODE  //to select and then perform certain functions
+v and arrow key to select the text
+d to delete
+u to undo the delete
+y for yanking i.e copying
+p to paste
+10p to paste 10 times
+dd to delete the whole line
+5dd to delete 5 lines
+yy to copy the entire line
+P pastes above the line 
+p pastes below the line
+
+
+INSERT MODE
+dd line gone
+so, if you want to delete and change the line 
+cc
+D deletes the full line after the cursor
+C changes the rest of the line
+Y is the same as yy
+r to replace
+w to jump to next word
+now W considers only space separation to be one word but w considers - as well to be separation between words
+similarly b for backward
+dw deletes word but if in words the deletes latter part only so use diw to delete full word
+d2w deletes two words
+d2b deletes two words backwards
+similarly,
+ciw to change in a word
+e jumps to end of the word
+I jumps beginning of the line
+0 jumps begin of the line
+$ jumps end of the line
+d0 deletes till the beginning
+d$ deletes till the end
+
+ci" change in quotation marks (used inside brackets) and similarly
+di"
+yi"
+
+d5w delete 5 words
+5d5w 5 times delete 5 words
+5yy copy 5 lines
+
+% if you use % on a bracket you can go to the end of that bracket
+
+t* to jump before the special character *
+f* to jump on the special character *
+T* and F* does the same thing backwards
+
+gg to go to the end of the page
+G to go to the end of the page
+xG to jump to that x line
+:x to jump to that x line
+
+
+
+
+
+so, there are many types of VISUAL modes like visual line, visual block mode
+in visual mode to select multiple lines
+SHIFT + V + arrow UP/DOWN
+
+Ctrl + V to enter VISUAL block mode, then
+SHIFT + V + arrow UP/DOWN
+
+
+== to correct the line indentation
+
+
+/word to jump to that word then,
+n to jump to the next similar word
+now to reset
+/sdinf    any nonsence
+now go to any word
+* will take you to the next occurence of the word(downwards)
+# will also do the same backwards
+
+
+
+mark warpoints
+
+ma as in mark that point as a
+then 'a to jump to that waypoint
+
+
+
+zz to center that line to the centre of the page
+
+
+
+
+
